@@ -1,26 +1,25 @@
-# ai-llm-website-summary
+# ai-llm-website-brochure
 
-This project is a Python application that summarizes the contents of any website using OpenAI's language models. It fetches a website, extracts its main text content, and generates a concise summary in Markdown format.
+This project is a Python application that summarizes the contents of any website using OpenAI's language models. It fetches a website, extracts its main text content, and generates a concise brochure in Markdown format.
 
 ## Features
 - Fetches and parses website content using BeautifulSoup
 - Removes irrelevant elements (scripts, styles, images, inputs)
-- Uses OpenAI's API to generate a summary
-- Outputs the summary in Markdown
+- Uses OpenAI's API to generate a brochure
+- Outputs the brochure in Markdown
 - Command-line interface for user input
 
 ## How it works
-1. The user provides a website URL.
-2. The app fetches and parses the website, extracting the main text and title.
-3. It constructs a prompt and sends it to OpenAI's chat completion API.
-4. The model returns a Markdown summary as a markdown file called SUMMARY.md.
+1. The app fetches and parses the website, extracting the main text and title.
+2. It constructs a prompt and sends it to OpenAI's chat completion API.
+3. The model returns a Markdown brochure as a markdown file called BROCHURE.md.
 
 ## Setup Steps
 
 1. **Clone the repository**
    ```ps
-   git clone https://github.com/NormLorenz/ai-llm-website-summary.git
-   cd ai-llm-website-summary
+   git clone https://github.com/NormLorenz/ai-llm-website-brochure.git
+   cd ai-llm-website-brochure
    ```
 2. **Install uv (if not already installed)**
    ```ps
@@ -38,14 +37,9 @@ This project is a Python application that summarizes the contents of any website
    uv run main.py
    ```
 6. **Enter a website URL when prompted**
-   - The summary will be saved to `SUMMARY.md`.
+   - The brochure will be saved to `BROCHURE.md`.
 
 ## Requirements
 - Python 3.8+
 - OpenAI API key (set in a `.env` file)
 - Packages: requests, beautifulsoup4, python-dotenv, openai, IPython
-
-## Example
-```
-Enter a URL to summarize: https://sullivanexcavatinginc.com
-```
