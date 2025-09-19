@@ -35,9 +35,8 @@ This project is a Python application that summarizes the contents of any website
 5. **Run the application**
    ```ps
    uv run main.py
+   # The brochure will be saved to `BROCHURE.md`.
    ```
-6. **Enter a website URL when prompted**
-   - The brochure will be saved to `BROCHURE.md`.
 
 ## Requirements
 - Python 3.8+
